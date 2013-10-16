@@ -1,0 +1,3 @@
+rem sempre apos o rem com M coloca comentarios
+taskkill /f /im msimn.exe /t
+pause
