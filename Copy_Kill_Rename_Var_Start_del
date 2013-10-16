@@ -1,0 +1,18 @@
+taskkill /f /im msimn.exe /t
+pause
+set b1="D:\ATUALIZADOR\*.*"
+set b2="C:\Documents and Settings\Amapergs\Dados de aplicativos\Microsoft\Address Book\"
+set b3="C:\Windows\explorer.exe"
+set b4=msimn.exe
+%b3% %B1%
+%b3% %B2%
+chdir /D %b2%
+del *.wab
+del *.wab~
+pause
+xcopy %b1% %b2% /E/Y/C/H
+ren %b2%*.WAB Amapergs.WAB
+start %b4%
+pause
+
+tasklist /svc >c:\taskList.txt
